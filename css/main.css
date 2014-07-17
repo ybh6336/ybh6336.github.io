@@ -28,6 +28,9 @@ a:hover {
   color: #0011ec;
   text-decoration: none;
 }
+a:focus {
+  text-decoration: none;
+}
 h1 > a {
   color: #303030;
 }
@@ -52,7 +55,6 @@ h1 > a:hover {
 
 .posts span {
   color: #aaa;
-  /*font-family: Monaco, "Courier New", monospace;*/
   font-size: 80%;
 }
 
@@ -101,20 +103,18 @@ h1 > a:hover {
 }
 
 .footer {
+  position: relative;
+  margin-top: -100px; /* negative value of footer height */
+  height: 100px;
+  clear: both;
+  padding-top: 20px;
   font-size: 80%;
-  color: #666;
-  border-top: 4px solid #eee;
-  margin-top: 2em;
-  overflow: hidden;
+  background-color: #4D4D4D;
+  color: #B2B2B2;
 }
 
-.footer .contact {
-  float: left;
-  margin-right: 3em;
-}
-
-.footer .contact a {
-  color: #8085C1;
+.footer a:hover {
+  color: #FFFFFF;
 }
 
 .footer .rss {
@@ -178,6 +178,10 @@ body {
   font-family: 'Ubuntu';
 }
 
+.container-fluid {
+    height: 100%;
+}
+
 .navbar-default {
   background-color: #ffffff;
   border-color: #ffffff;
@@ -217,7 +221,6 @@ body {
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
     background-color: #ffffff;
-    /*border-right: 1px solid #eee;*/
   }
 }
 
@@ -234,10 +237,4 @@ body {
 }
 .nav-sidebar > .active > a {
   color: #0011ec;
-  /*background-color: #428bca;*/
-}
-.nav > li > a:hover, .nav > li > a:focus {
-  /*color: #0011ec;*/
-  text-decoration: underline;
-  background-color: #ffffff;
 }
