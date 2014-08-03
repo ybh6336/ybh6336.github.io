@@ -147,16 +147,16 @@ h1 > a:hover {
 }
 
 .post code {
-  border: 0px;
-  background-color: #eef;
-  padding: 0 .2em;
-  font-family: 'Source Code Pro';
-  color: #f8f8f2;
+  color: #000000;
+  border: 1px solid #DDD;
 }
 
 .post pre code {
   border: none;
   font-family: 'Source Code Pro';
+  background-color: #eef;
+  padding: 0 .2em;
+  color: #f8f8f2;
 }
 
 /* terminal */
@@ -178,7 +178,7 @@ h1 > a:hover {
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 75px;
-  font-family: 'Ubuntu';
+  font-family: 'Open Sans';
 }
 
 .container-fluid {
